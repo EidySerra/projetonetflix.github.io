@@ -1,0 +1,286 @@
+*{
+margin: 0;
+box-sizing: border-box;
+
+}
+body, header{
+    padding: 100;
+    position: relative;
+}
+
+ul li img{
+    height: 25px;
+    margin-top: 15px;
+}
+.img-logo{
+    cursor: pointer;
+}
+a{
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    position: fixed;
+    list-style: none;
+    z-index: 1000;
+    
+}
+video{
+    width: 100vw;
+    margin-top:-45px;
+
+}
+/* ligar o tumdom */
+.botao-som{
+    position: absolute;
+    top: 12px;
+    left: 96%;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 4;
+    position: fixed;
+}
+/* -----fim-------- */
+.btn{
+    background-color: rgb(130, 3, 248);
+}
+
+/* ---------------estilizaçao modal */
+.modals{
+    display: none ;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    background: rgba(20, 20, 20, 0.808);
+    color: #fcfbfb;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+
+}
+.modal-conteudo{
+    background-color: #181818;
+    margin: 15px auto;
+    padding: 20px;
+    width: 70%;
+    height: 500px;
+    
+}
+.modal-img img{
+    height: 400px;
+    position: absolute;
+    top: 10%;
+    left: 350px
+}
+div.modal-img{
+    
+}
+p.genero{
+    width: ;
+    font-size: 20px;
+    height: 20px
+}
+p.modal-paragrafo {
+    color: #e6e3e3a8;
+    width: 200px;
+    
+}
+p.modal-paragrafo, h2.modal-titulo, p.genero{
+    margin-left: 600px;
+    margin-top: 20px;
+}
+.btn-fechar{
+    cursor: pointer;
+    background-color: rgba(130, 3, 248, 0);
+    border: none;
+    border-radius: 5px;
+    color: #e6e3e3;
+    padding: 5px 10px;
+    position: absolute;
+    top: 470px;
+    left: 350px;
+}
+.btn-fechar:hover{
+    color: #ffffff;
+    border: solid 1px rgb(130, 3, 248);
+    background-color: rgb(58, 8, 104);
+}
+/* Estilo do fundo escurecido */
+.overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.068);
+    display: none;
+    z-index: 999;
+  }
+  /*estlizção carrocel  */
+.carrocel{
+    margin-left: 50px;
+}
+
+.carrocel h3{
+    color: white;
+    
+}
+span{
+    background-color: rgb(130, 3, 248);
+    color: rgb(130, 3, 248);
+    border-radius: 2px;
+}
+.carousel-item img{
+    height: 150px;
+    border-radius: 5px;
+    margin-top: 20px;
+    z-index: -3;
+}
+.info{
+    color: rgb(245, 244, 241);
+    position: absolute;
+    top: 230px;
+    left: 7%;
+    width: 700px;
+   
+}
+.info h2{
+    font-size: 55px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.info p{
+    font-size: 15px;
+    text-align: justify;
+    height: 80px;
+    margin-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana,;
+}
+.link-assistir, .link-infor{
+    background-color: rgba(247, 244, 246, 0.466);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;   
+}
+a.link-info{
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+}
+i{
+    color: aliceblue;
+}
+.link-assistir{
+    background-color: rgb(255, 255, 255);
+}
+.card-text{
+    height: 150px;
+}
+P.card-text {
+    color: #f7f7f73f;
+}
+.card-body img{
+    height: 70px;
+}
+.cards{
+    display: flex;
+}
+
+/* estilo btn ver mais seta > */
+button.ver-mais{
+    position: relative;
+    left: 92%;
+    border: none;
+    background-color: #18181850;
+    color: #ee1111;
+    font-size: 36px;
+}
+button.ver-mais:hover{
+    background-color: rgb(58, 8, 104);
+    color: #e70404ea;
+}
+/* estilo modal */
+h5.card-title{
+    color: #f7f7f7cb;
+}
+.card{
+    margin: 9px;
+}
+div#Ultimas-atualizacoes img{
+    height: 400px;
+}
+.card-body{
+    background-color: black;
+}
+a.btn-primary{
+    background-color:rgb(130, 3, 248);
+    border: solid 1px rgb(130, 3, 248);
+}
+a.btn-primary:hover{
+    background-color:rgb(58, 8, 104);
+    border: solid 1px rgb(130, 3, 248);
+}
+/*footer estilização*/
+footer{
+    background-color: rgb(33, 34, 36);
+    color: #ffffff;
+    height: 400px;
+    margin-left: 60px;
+    margin-right: 140px;
+    border-radius: 5px;
+}
+.footer img{
+    height: 28px;
+}
+.footer{
+    padding: 40px;
+    margin-left: 40px;
+}
+.contato{
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.a{
+
+   color: #bebcbc5b;
+   display: block;
+   padding: 5px;
+   position: relative;
+   left: 75px;
+   top: -25px;
+   font-size: 16px;
+   width: 250px;
+}
+.b{
+    color: #bebcbc5b;
+    display: block;
+    padding: 5px;
+    position: relative;
+    left: 350px;
+    bottom: 195px;
+    font-size: 16px;
+    width: 200px;
+}
+.c{
+    color: #bebcbc5b;
+    display: block;
+    padding: 5px;
+    position: relative;
+    left: 600px;
+    bottom: 360px;
+    font-size: 16px;
+    width: 200px;
+}
+.d{
+    color: #bebcbc5b;
+    display: block;
+    padding: 5px;
+    position: relative;
+    left: 840px;
+    bottom: 530px;
+    font-size: 16px;
+    width: 250px;
+
+}
+
+/*fim carrocel*/

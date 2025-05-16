@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev-Club Netflix</title>
+  <link rel="stylesheet" href="estilo.css">
+  
+  <!-- Adicionando o Bootstrap Javascript-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   <!-- Adicionando o Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color: black;">
+  <header>
+   <ul>
+    <li>
+      <a id="play" href="audio/tudum-netflix-sound.mp3">
+        <img src="img/logo.png" class="img-logo" id="playBtn" alt="imagem Netflix">
+      </a>
+    </li>
+    <li><img src="img/avatar.png" alt=""></li>
+  </ul>
+    
+    <div class="Video"> <video src="video/Squid Game (2).mp4"autoplay muted loop class="video"></video></div>
+    <button class="botao-som">🎙️</button>
+    <div class="info">
+      <h2>Squid Game</h2>
+        <p> Centenas de jogadores sem dinheiro aceitam um estranho convite
+           para competir em jogos infantis. Lá dentro,
+           um prêmio tentador o aguarda - com apostas altas e mortais.</p>
+  
+           <a href="#" class="link-assistir">Assistir Agora</a>
+           <a href="#" id="AbrirModal" class="link-infor">Mais Informações</a>
+      </div>
+  </header>  
+
+<!-- Modal botao mais informações -->
+<div class="modals" id="modal">
+
+  <div class="modal-img">
+    <img class="img-modal" src="img/squad-game.png" alt="">
+  </div>
+
+<div class="modal-conteudo">
+    <h2 class="modal-titulo">Squid Game</h2><br>
+
+
+    <div class="overlay" id="overlay"></div>
+    <p class="modal-paragrafo">Centenas de jogadores sem dinheiro aceitam um estranho
+       convite para competir em jogos infantis. Lá dentro, um
+       prêmio tentador o aguarda - com apostas altas e mortais.</p>
+
+    <p class="genero">Genero: &nbsp; <strong>Acção</strong></p>
+    <p class="genero">Ano Lançamento: &nbsp; <strong>2024</strong></p>
+    <p class="genero">Temporadas: &nbsp; <strong>3</strong></p>
+<br><br><br>
+    <button id="closeModalBtn" class="btn-fechar">Fechar</button>
+</div>
+</div>
+<!-- ------------------------------------------------fim -->
+
+  <section class="corpo-do-carrossel">
+    <div class="carrocel">
+      <h3> <span>.</span> Lançamento Recente</h3><br>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+  
+            <div class="carousel-item active">
+              <img class="carrocel-img" src="img/chokehold.jpg" alt="">
+              <img class="carrocel-img" src="img/dupla_jornada.jpg" alt="">
+              <img class="carrocel-img" src="img/hunter.jpg" alt="">
+              <img class="carrocel-img" src="img/jaula.jpg" alt="">
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carrocel-img" src="img/abyss.jpg" alt="">
+              <img class="carrocel-img" src="img/Agente-Noturno-Netflix.jpg" alt="">
+              <img class="carrocel-img" src="img/lift.jpg" alt="">
+              <img class="carrocel-img" src="img/moonfall.jpg" alt="">
+            </div>
+           
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+  
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div>
+      </div>    
+<br><br><br>
+      <!--Partes dos cards Primeiro------------------------------------------------------>
+    <h3><span>.</span> Ultimas Actualizações Em Filmes</h3><br>
+    <button class="ver-mais"> > </button>
+    <div class="cards"><br>
+     <div class="card" style="width: 17rem;">
+       <img class="card-img-top" src="img/mafia_da_dor.jpg" alt="Imagem de capa do card">
+       <div class="card-body">
+         <h5 class="card-title">MAFIA DO AMOR</h5>
+         <i>Crime/Ficção Policial</i> &nbsp;
+         
+         <img src="img/estrelas.png" alt="">
+         <p class="card-text">Uma mãe solo falida, mas ambiciosa, encontra uma oportunidade de ganhar dinheiro vendendo um analgésico potente. Mas até onde ela vai para ficar rica?</p>
+         <a href="#" class="btn btn-primary">Assistir</a>
+       </div>
+     </div>
+     <div class="card" style="width: 17rem;">
+       <img class="card-img-top" src="img/ressureição.jpg" alt="Imagem de capa do card">
+       <div class="card-body">
+         <h5 class="card-title">RESSUREIÇÃO</h5>
+         <i>Acção/Mistério</i> &nbsp;
+
+         <img src="img/estrelas.png" alt="">
+         <p class="card-text">Para acabar com os rumores sobre a ressurreição de um pregador judeu, um tribuno romano e um soldado novato buscam o corpo desaparecido do homem crucificado</p>
+         <a href="#" class="btn btn-primary">Assistir</a>
+       </div>
+     </div>
+     <div class="card" style="width: 17rem;">
+       <img class="card-img-top" src="img/a linha da extinçao.jpg" alt="Imagem de capa do card">
+       <div class="card-body">
+         <h5 class="card-title">A LINHA DA EXTINÇÃO</h5>
+         <i>Ação/Thriller</i> &nbsp;
+         <img src="img/estrela4.png" alt="">
+         <p class="card-text">A humanidade foi destruída por bestas alienígenas. Os sobreviventes desse mundo pós-apocalíptico se escondem no alto de montanhas, onde as criaturas não conseguem sobreviver.</p>
+         <a href="#" class="btn btn-primary">Assistir</a>
+       </div>
+     </div>
+     <div class="card" style="width: 17rem;">
+       <img class="card-img-top" src="img/f1.jpg" alt="Imagem de capa do card">
+       <div class="card-body">
+         <h5 class="card-title">FORMULA 1</h5>
+         <i>Ação/Esporte</i> &nbsp;
+         <img src="img/estrela4.png" alt="">
+         <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+         <a href="#" class="btn btn-primary">Visitar</a>
+       </div>
+     </div>
+    </div>
+
+<!--Fim do Primeiro card-------------------------------------------------------------------->     
+
+<!--Inicio do Segundo card------------------------------------------------------------------>
+<br><br><br>
+
+   <h3><span>.</span> Ulimas Actualizações Em Series</h3><br>
+   <button class="ver-mais"> > </button>
+   <div class="cards"><br>
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="img/vincenzo.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">VINCENZO</h5>
+        <i>2021 ‧ Drama ‧ 1 temporada</i> &nbsp;
+        <img src="img/estrelas.png" alt="">
+        <p class="card-text">Um advogado da máfia coreano-italiana dá a um conglomerado incomparável um gostinho de seu próprio remédio com um lado da justiça.</p>
+        <a href="#" class="btn btn-primary">Visitar</a>
+      </div>
+    </div>
+    <div  class="card" style="width: 17rem;">
+      <img class="card-img-top" src="img/peaky.png" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">PAEKY BLINDERS</h5>
+        <i>2013 ‧ Drama ‧ 6 temporadas</i> &nbsp;
+        <img src="img/estrelas.png" alt="">
+        <p class="card-text">Uma gangue notória em 1919 em Birmingham, Inglaterra, é liderada pelo feroz Tommy Shelby, um chefe do crime determinado a subir no mundo, não importa o custo.</p>
+        <a href="#" class="btn btn-primary">Visitar</a>
+      </div>
+    </div>
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="img/control-z.png" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">CONTROL Z</h5>
+        <i>2020 ‧ Drama ‧ 3 temporadas</i> &nbsp;
+        <img src="img/estrela4.png" alt="">
+        <p class="card-text">Quando um hacker começa a divulgar os segredos dos alunos para toda a escola, a socialmente isolada, mas observadora, Sofía trabalha para descobrir sua identidade.</p>
+        <a href="#" class="btn btn-primary">Visitar</a>
+      </div>
+    </div>
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="img/tomorrow.png" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">TOMORROW</h5>
+        <i>Série de TV 2022</i> &nbsp;
+        <img src="img/estrela4.png" alt="">
+        <p class="card-text">Feito meio humano e meio espírito por acidente, um jovem é contratado por uma companhia de ceifadores no submundo para realizar missões especiais.</p>
+        <a href="#" class="btn btn-primary">Visitar</a>
+      </div>
+    </div>
+   </div>
+<!--Fim Segundo card------------------------------------------------------------------------>
+<br><br><br>
+
+<!--Inicio Terceiro card-------------------------------------------------------------------->
+
+ <h3><span>.</span> Recomendado Para Você</h3><br>
+ <button class="ver-mais"> > </button>
+  <div class="cards"><br>
+   <div class="card" style="width: 17rem;">
+     <img class="card-img-top" src="img/la casa de papel.jpg" alt="Imagem de capa do card">
+     <div class="card-body">
+       <h5 class="card-title">LA CASA DE PAPEL</h5>
+       <i>2017 ‧ Thriller ‧ 5 temporada</i> &nbsp;
+       <img src="img/estrelas.png" alt="">
+       <p class="card-text">Oito ladrões fazem reféns e se trancam na Casa da Moeda Real da Espanha enquanto um gênio do crime manipula a polícia para realizar seu plano.</p>
+       <a href="#" class="btn btn-primary">Visitar</a>
+     </div>
+   </div>
+   <div class="card" style="width: 17rem;">
+     <img class="card-img-top" src="img/lupin.png" alt="Imagem de capa do card">
+     <div class="card-body">
+       <h5 class="card-title">LUPIN</h5>
+       <i>2021 ‧ Drama ‧ 3 temporadas</i> &nbsp;
+       <img src="img/estrelas.png" alt="">
+       <p class="card-text">Inspirado nas aventuras de Arsène Lupin, o ladrão cavalheiro Assane Diop se propõe a vingar seu pai por uma injustiça infligida por uma família rica.</p>
+       <a href="#" class="btn btn-primary">Visitar</a>
+     </div>
+   </div>
+   <div class="card" style="width: 17rem;">
+     <img class="card-img-top" src="img/scoob.jpg" alt="Imagem de capa do card">
+     <div class="card-body">
+       <h5 class="card-title">SCOOB</h5>
+       <i>2020 ‧ Infantil/Mistério</i> &nbsp;
+       <img src="img/estrela4.png" alt="">
+       <p class="card-text">Scooby e sua turma enfrentam seu mistério mais desafiador de todos os tempos: um plano para liberar o cão fantasma Cerberus sobre o mundo.</p>
+       <a href="#" class="btn btn-primary">Visitar</a>
+     </div>
+   </div>
+   <div class="card" style="width: 17rem;">
+     <img class="card-img-top" src="img/big mause.jpg" alt="Imagem de capa do card">
+     <div class="card-body">
+       <h5 class="card-title">BIG MOUSE</h5>
+       <i>2022 ‧ Drama ‧ 1 temporada</i> &nbsp;
+       <img src="img/estrela4.png" alt="">
+       <p class="card-text">Preso em um caso de assassinato, um advogado medíocre é apontado como o notório vigarista Big Mouse.</p>
+       <a href="#" class="btn btn-primary">Visitar</a>
+     </div>
+   </div>
+  </div>
+
+<!--Fim Terceiro card-------------------------------------------------------------------------------->
+<br><br><br>
+<!--Card 4------------------------------------------------------------------------------------------->
+ <h3><span>.</span> Novidades da Semana</h3><br>
+ <button class="ver-mais"> > </button>
+ <div class="cards"><br>
+  <div class="card" style="width: 17rem;">
+    <img class="card-img-top" src="img/lucifer.jpg" alt="Imagem de capa do card">
+    <div class="card-body">
+      <h5 class="card-title">lUCIFER</h5>
+      <img src="img/estrela4.png" alt="">
+      <p class="card-text">Lúcifer, farto de ser o criado zeloso do Inferno, decide passar algum tempo na Terra para entender a humanidade, para isso se instala em Los Angeles.</p>
+      <a href="#" class="btn btn-primary">Visitar</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 17rem;">
+    <img class="card-img-top" src="img/modo voo.jpg" alt="Imagem de capa do card">
+    <div class="card-body">
+      <h5 class="card-title">MODO VOO</h5>
+      <img src="img/estrela4.png" alt="">
+      <p class="card-text">Sigue a jovem Ana, que estudou design de moda sonhando em se tornar uma grande estilista, mas deixou tudo para se tornar a influenciadora de uma marca famosa.</p>
+      <a href="#" class="btn btn-primary">Visitar</a>
+    </div>
+  </div>
+  <div class="card" style="width: 17rem;">
+    <img class="card-img-top" src="img/rua do medo.jpg" alt="Imagem de capa do card">
+    <div class="card-body">
+      <h5 class="card-title">RUA DO MEDO</h5>
+      <img src="img/estrela4.png" alt="">
+      <p class="card-text">Depois de uma série de assassinatos brutais, uma adolescente e seus amigos enfrentam uma força maligna que atormenta sua notória cidade há séculos.</p>
+      <a href="#" class="btn btn-primary">Visitar</a>
+    </div>
+  </div>
+  <div class="card" style="width: 17rem;">
+    <img class="card-img-top" src="img/castelo-de-arreia.jpg" alt="Imagem de capa do card">
+    <div class="card-body">
+      <h5 class="card-title">CASTELO DE AREIA</h5>
+      <img src="img/estrela4.png" alt="">
+      <p class="card-text">Segue um jovem soldado e seu envolvimento na invasão do Iraque em 2003. Com base em eventos reais, ele testemunha a destruição e os horrores da guerra.</p>
+      <a href="#" class="btn btn-primary">Visitar</a>
+    </div>
+  </div>
+ </div>
+  </section>
+<br><br>
+  <footer>
+    <div class="footer">
+      <img src="img/logo.png" alt="">
+      <div class="contato">Questions? call  <a href="#">935467029</a></div>
+    </div>
+
+  <div class="linksfooter1">
+        <a class="a" href="#">Perguntas frequentes</a>
+        <a class="a" href="">Relações com investidores</a>
+        <a class="a" href="">Comprar partões-presentes</a>
+        <a class="a" href="">Preferências de Cookies</a>
+        <a class="a" href="">Avisos legais</a>
+    </div>
+
+  <div class="linksfooter2">
+      <a class="b" href="#">Central de ajuda</a>
+      <a class="b" href="">Empregos</a>
+      <a class="b" href="">Maneiras de assistir</a>
+      <a class="b" href="">Informações corporativas</a>
+      <a class="b" href="">Apenas na Netflix</a>
+  </div>
+
+  <div class="linksfooter3">
+    <a class="c" href="#">Contas</a>
+    <a class="c" href="">Lojas Netflix</a>
+    <a class="c" href="">Termos Uso</a>
+    <a class="c" href="">Contate-nos</a>
+    <a class="c" href="">Opeçôes de anúncio</a>
+ </div>
+
+  <div class="linksfooter3">
+  <a class="d" href="#">Centro de Midea</a>
+  <a class="d" href="">Resgatar cartões-presentes</a>
+  <a class="d" href="">Termos Uso</a>
+  <a class="d" href="">Privacidades</a>
+  <a class="d" href="">Teste de velocidade</a>
+ </div>
+  </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
